@@ -1,14 +1,11 @@
+/* entrada de una palabra o frase */
 const frase = prompt("Ingrese una palabra o frase");
 
-const cantidad = frase.length;
+/* Definir variable para guardar la cantidad de letras de la frase ingresada por el usuario */
+const cantidadLetras = frase.length;
 
-const mensajeCantidad = frase + cantidad;
+/* variable para un mensaje */
+const mensajeCantidad = "La cantidad de letras de la frase ingresada es: " + cantidadLetras; 
 
-console.log (mensajeCantidad);
-
-const fraseMinusculas = frase.toLowerCase(mensajeCantidad);
-const fraseMayusculas = frase.toUpperCase(mensajeCantidad);
-
-const minMay = fraseMinusculas + fraseMayusculas;
-
-console.log (minMay);
+/* Mostrar al usuario el mensaje */
+alert(mensajeCantidad);
